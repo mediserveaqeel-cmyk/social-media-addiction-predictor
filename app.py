@@ -75,7 +75,8 @@ model, enc, feature_cols, target_cols, accuracy = load_artifacts()
 st.title("📱 Social Media Addiction Level Predictor")
 st.markdown(
     '<div class="subtitle">A multiclass logistic regression model that estimates addiction '
-    'severity from usage habits, psychological scores, and lifestyle factors.</div>',
+    'severity from usage habits, psychological scores, and lifestyle factors.<br>'
+    'Developed by <b>Muhammad Aqeel</b></div>',
     unsafe_allow_html=True,
 )
 
@@ -233,4 +234,4 @@ if predict_clicked:
     )
 
 st.markdown("<br><hr>", unsafe_allow_html=True)
-st.caption("Built with scikit-learn & Streamlit · Predictions are estimates based on a logistic regression model, not clinical assessments.")
+st.caption("Built by Muhammad Aqeel · Powered by scikit-learn & Streamlit · Predictions are estimates based on a logistic regression model, not clinical assessments.")
